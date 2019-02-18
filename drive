@@ -1,0 +1,14 @@
+class dumb_robot():
+
+	from adafruit_crickit import crickit
+
+	ltmtr = crickit.dc_motor_1
+	rtmtr = crickit.dc_motor_2
+
+	def __init__(self, spl, spr):
+		self.spl = spl
+		self.spr = spr
+
+	def move_robot(self):
+		ltmtr.throttle = {}.format(spl)
+		rtmtr.throttle = {}.format(spr)
